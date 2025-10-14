@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>javascript string and math functions</title>
+</head>
+<body>
+<h1>javascript string and math function</h1>
+
+<h2>math properties</h2>
+<script>
+document.writeln("<p><b>Math.E:</b>" + Math.E + "</p>")
+document.writeln("<p><b>Math.PI:</b>" + Math.PI + "</p>")
+document.writeln("<p><b>Math.SQRT2:</b>" + Math.SQRT2 + "</p>")
+document.writeln("<p><b>Math.SQRT1_2:</b>" + Math.SQRT1_2+ "</p>")
+document.writeln("<p><b>Math.LN2:</b>" + Math.LN2 + "</p>")
+document.writeln("<p><b>Math.LN10:</b>" + Math.LN10 + "</p>")
+document.writeln("<p><b>Math.LOG2E:</b>" + Math.LOG2E + "</p>")
+document.writeln("<p><b>Math.Log10E:</b>" + Math.Log10E + "</p>")
+</script>
+
+<h2>math objects</h2>
+<script>
+let number = 7.52;
+document.writeln("Number:" + number + "<br>");
+document.writeln("Integer part:" + Math.floor(number) + "<br>");
+document.writeln("Nearest integer:" + Math.round(number) + "<br>");
+document.writeln("Squareroot:" + Math.sqrt(6.7).toFixed(15) + "<br>");
+let nums=[4,3,7,-1];
+document.writeln("Minimum value from(4,3,7,-1): " + Math.min(...nums) + "<br>");
+document.writeln("Maximum value from(4,3,7,-1): " + Math.max(...nums) + "<br><br>");
+</script>
+
+
+<h2>string objects</h2>
+<script>
+let str="beema";
+document.writeln("string is: " + str + "<br>");
+document.writeln("length of the string is:" + str.length + "<br>");
+document.writeln("in LowerCase: " + str.toLowerCase() + "<br>");
+document.writeln("in UpperCase:"+str.toUpperCase()+"<br>");
+</script>
+</body>
+</html> 
