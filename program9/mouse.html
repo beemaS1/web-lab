@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>mouse event</title>
+<style>
+body{
+text-align:center;
+}
+</style>
+
+</head>
+<body>
+<h1>events</h1>
+<img src="/home/mca/Pictures/pic1.jpeg" alt="Image 1" id="image" class="image" onmouseover="changeToSecondImage()" onmouseout="changeToThirdImage()">
+<script>
+const img = document.getElementById('image');
+
+function changeToSecondImage() {
+    img.src ="/home/mca/Pictures/pic2.jpeg";  
+}
+function changeToThirdImage() {
+    img.src ="/home/mca/Pictures/pic3.jpeg";  
+}
+
+</script>
+
+</body>
+</html>

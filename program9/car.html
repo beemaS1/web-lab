@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag to Change Image</title>
+
+    <style>
+        body {
+            background-color: #f6f6f6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .oval-frame {
+            width: 300px;
+            height: 400px;
+            border-radius: 50%;
+            padding: 12px;
+            background-color: white;
+
+            border: 5px solid #4d7a43;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .oval-frame img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+
+            border: 5px solid #a7d3a0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="oval-frame" id="imageContainer">
+        <img id="mainImage" src="https://plus.unsplash.com/premium_photo-1737182592549-0c83f93e2903?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bHV4dXJ5JTIwdmVoaWNsZXxlbnwwfHwwfHx8MA%3D%3D" draggable="true">
+    </div>
+
+   <script>
+    let img = document.getElementById("mainImage");
+    
+    let img1 = "https://plus.unsplash.com/premium_photo-1737182592549-0c83f93e2903?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bHV4dXJ5JTIwdmVoaWNsZXxlbnwwfHwwfHx8MA%3D%3D";
+
+    let img2 = "https://hips.hearstapps.com/hmg-prod/images/ferrari-e-suv-2-copy-680287cac36b2.jpg?crop=1.00xw:0.838xh;0,0.0673xh";
+
+    let img3 = "https://www.spinny.com/blog/wp-content/uploads/2024/09/videoframe_0.webp";
+    
+    img.addEventListener("mouseenter", function () {
+        img.src = img2;
+    });
+
+    img.addEventListener("mouseleave", function () {
+        img.src = img3;
+    });
+</script>
+</body>
+</html>
